@@ -34,8 +34,6 @@ DEBUG = development
 
 if development:
     ALLOWED_HOSTS = [os.environ.get('LOCALHOST')]
-# elif DEBUG == True:
-#    ALLOWED_HOSTS = ['8000-masorr-ci-fsf-hello-djan-q7hrogyq4o.us2.codeanyapp.com']
 else:
     ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME')]
 
